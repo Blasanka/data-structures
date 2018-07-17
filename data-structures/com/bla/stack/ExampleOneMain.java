@@ -8,7 +8,7 @@ public class ExampleOneMain {
 		
 		//Think this example as your phone volume, initially it is zero
 		//(foolish example, demonstration purposes only)
-		
+
 		Stack volume = new Stack(10);
 		
 		//if your data type is not int argument have to be changed
