@@ -1,6 +1,6 @@
 package com.bla.stack;
 
-public class Main {
+public class ExampleOneMain {
 
 	public static void main(String[] args) {
 		
