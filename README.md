@@ -1,14 +1,12 @@
 # Data Structures using Java
 
-##How to run:
+## How to run:
 
 Download or clone the repository import to your favorite IDE and open any Main classes, then, you can run and check.
 
 <hr>
 
-##Content:
-
-<hr>
+## Content:
 
 ## 1. Stack
 
@@ -24,5 +22,6 @@ Download or clone the repository import to your favorite IDE and open any Main c
 
 <hr>
 
-##How to Contribute:
----
+## How to Contribute:
+
+send a mail to leoshak360@gmail.com
