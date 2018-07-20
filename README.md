@@ -1,10 +1,15 @@
 # Data Structures using Java
 
 ##How to run:
+
 Download or clone the repository import to your favorite IDE and open any Main classes, then, you can run and check.
+
 <hr>
+
 ##Content:
+
 <hr>
+
 ## 1. Stack
 
 - Provide Last In First Out(LIFO)
@@ -18,5 +23,6 @@ Download or clone the repository import to your favorite IDE and open any Main c
 - Example: This is like a persons in a queue to get meds or something in real life, firstly came person will get meds first.
 
 <hr>
+
 ##How to Contribute:
 ---
