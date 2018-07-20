@@ -6,11 +6,11 @@ package com.bla.stack;
 //LIFO : Last In First Out
 public class Stack {
 
-	int maxSize;
-	int top;
+	private int maxSize;
+	private int top;
 	
 	//data type can be any but keep remember to change other places: String[] stArray;
-	int[] stackArray;
+	private int[] stackArray;
 	
 	
 	public Stack(int size) {

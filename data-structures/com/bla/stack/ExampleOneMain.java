@@ -22,14 +22,14 @@ public class ExampleOneMain {
 		//you can use a for loop according to your scenario
 		for(int i = 1; i <= 4; i++) {
 			volume.push(i);
-		}
+		} // now volume is 4
 		
 		//you can decrease volume down to 0
-		volume.pop();
-		volume.pop();
+		volume.pop(); // down to 3
+		volume.pop(); // down to 2
 		
 		//you can see current volume by
-		volume.peek();
+		volume.peek(); // current volume is 2
 	}
 
 }
