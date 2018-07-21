@@ -14,7 +14,7 @@ Download or clone the repository import to your favorite IDE and open any Main c
 - Lastly added value will remove first.
 - Example: When you press few keys on keyboard they are adding to a stack and when you press delete key lastly added value will remove first.
 
-## 2. Queue
+## 2. Queue (Linear Queue and Circular Queue)
 
 - Provide First In First Out(FIFO)
 - Firstly added value will remove first.

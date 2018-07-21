@@ -31,6 +31,21 @@ public class LinearExampleMain {
 		
 		//you can see current token by
 		tokens.peekFront(); // next token should be 3
+		
+
+		// you can add values until queue become full, like below:
+		
+//		int i = 0;
+//		while (!tokens.isFull()) {
+//			tokens.insert(++i);
+//		}
+		
+		// you can remove until queue become empty like below:
+		
+//		while (!tokens.isEmpty()) {
+//			tokens.remove();
+//		}
+		
 	}
 
 }
