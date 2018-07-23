@@ -20,6 +20,11 @@ Download or clone the repository import to your favorite IDE and open any Main c
 - Firstly added value will remove first.
 - Example: This is like a persons in a queue to get meds or something in real life, firstly came person will get meds first.
 
+## 2. LinkedList
+
+- Linked objects. Just like a simple class and properties/variables with a special property called --next to hold another Link/object memory address(In Java actually we don't have memory address rather we have hash code(example: #342ff3) for every object to uniquely identify that object.).
+- [more info coming soon.]
+
 <hr>
 
 ## How to Contribute:

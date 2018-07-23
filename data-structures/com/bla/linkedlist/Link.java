@@ -8,9 +8,10 @@ public class Link {
 	
 	public Link(int id) {
 		this.lData = id;//this keyword can be avoided
+		this.next = null;
 	}
 	
 	public void displayLink() {
-		System.out.println("Id is: " + lData);
+		System.out.println(lData);
 	}
 }
