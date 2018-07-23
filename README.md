@@ -1,5 +1,9 @@
 # Data Structures using Java
 
+## Note:
+
+This repository updates everyday, check for updates and suggest anything.
+
 ## How to run:
 
 Download or clone the repository import to your favorite IDE and open any Main classes, then, you can run and check.
@@ -29,4 +33,5 @@ Download or clone the repository import to your favorite IDE and open any Main c
 
 ## How to Contribute:
 
+Star the repo then Fork it and add/change and pull request. Then, I will review and merge it.
 send a mail to leoshak360@gmail.com
