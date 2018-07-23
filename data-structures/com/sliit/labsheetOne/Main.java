@@ -30,32 +30,77 @@ public class Main {
 //		Ex:     3 + (( 6 * 2) – 3)    valid
 //				5 * 6 + (2  - 5       not valid
 		
-		//Below is what I came up with, you may find different ways to do this. Suggest me if you have better solution.
 		
-		Stack expression = new Stack(20);
+		//Below is what I came up with, you may find different ways to do this. Suggest me if you have better solution.
+
+//		c) Use the stack class created above and check whether a user entered expression is correctly parenthesized.  
+//		 
+//		Ex:     3 + (( 6 * 2) – 3)    valid
+//				5 * 6 + (2  - 5       not valid
+		
+		//isBalanced() method implemented to check parenthesis
+		if(isBalanced()) 
+			System.out.println("valid");
+		else
+			System.out.println("not valid");
+	}
+	
+	//better solution, isBalanced() implementation(not a must to implement method) 
+	
+	public static boolean isBalanced() {
+		//Below is what I came up with, you may find different ways to do this. Suggest me if you have better solution.
 		
 		System.out.print("Enter a Expression: ");
 		Scanner userInput = new Scanner(System.in);
 		String insertedExp = userInput.nextLine();
+
+		Stack expression = new Stack(insertedExp.length());
 		
 		for(int i =0; i < insertedExp.length(); i++) {
-			expression.push(insertedExp.charAt(i));
+			char character = insertedExp.charAt(i);
+			if (!expression.isFull() && '(' == character)
+				expression.push(character);
+			else if(character == ')') {
+                if(expression.isEmpty() || expression.pop() != '(') {
+                    return false;
+                }
+            }
 		}
 		
-		int count = 0;
-		while(!expression.isEmpty()) {
-			char character = expression.pop();
-			if ('(' == character)
-				count++;
-			else if (')' == character)
-				count--;
-		}
-		
-		if (count % 2 == 0) {
-			System.out.println("valid");
-		} else {
-			System.out.println("not valid");
-		}
+		//close the scanner
+		userInput.close();
+		return expression.isEmpty();
 	}
+	
+	//below solution will fail/wrong for inputs like: )( and this is just a solution that you can implement without Stack
+	
+//	public static boolean isBalanced() {
+//		Stack expression = new Stack(20);
+//		
+//		System.out.print("Enter a Expression: ");
+//		Scanner userInput = new Scanner(System.in);
+//		String insertedExp = userInput.nextLine();
+//		
+//		for(int i =0; i < insertedExp.length(); i++) {
+//			expression.push(insertedExp.charAt(i));
+//		}
+//		
+//		int count = 0;
+//		while(!expression.isEmpty()) {
+//			char character = expression.pop();
+//			if ('(' == character)
+//				count++;
+//			else if (')' == character)
+//				count--;
+//		}
+//		
+//		if (count % 2 == 0) {
+//			System.out.println("valid");
+//			return true;
+//		} else {
+//			System.out.println("not valid");
+//			return false;
+//		}
+//	}
 
 }

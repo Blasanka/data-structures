@@ -42,6 +42,7 @@ public class QueueX {
 	
 	public boolean isFull() {
 		return rear == maxSize -1;
+//		return noItems == maxSize; // for circular queue
 	}
 
 }
