@@ -1,0 +1,71 @@
+
+	//this is how I inserting at last
+	public void insertLast(int age) {
+        Link newLink = new Link(age);
+        
+        if(last != null) {
+        	last.previous = newLink;
+        }
+        
+        last = newLink;
+        
+        if(first == null) {
+        	first = newLink;
+        }
+    }
+	
+	//find and delete
+	public boolean delete(int age) {
+		Link current = first;
+		Link previous = first;
+		
+		while(current != null) {
+			if(current.age == age) {
+				previous.next = current;
+				return true;
+			} else {
+				previous = current;
+				current = current.next;
+			}
+		}
+		
+		return false;
+	}
+	
+	public Link deleteFirst() {
+        if (isEmpty()) 
+        	return null;
+        
+        Link temp = first;
+        first = first.next;
+        first.previous = null;
+        
+        return temp;
+    }
+    
+    public Link deleteLast() {
+        if (isEmpty()) 
+        	return null;
+        
+        Link temp = last;
+        last = last.previous;
+        
+        return temp;
+    }
+    
+    
+    //in main
+    
+    
+//		
+//		ageList.insertLast(23);
+//		ageList.insertLast(22);
+//		ageList.insertLast(44);
+//		ageList.insertLast(53);
+
+
+//		ageList.deleteLast();
+//		ageList.deleteFirst();
+		ageList.displayListBackword();
+//		System.out.println(ageList.delete(22));
+//		ageList.displayList();
