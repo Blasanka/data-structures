@@ -23,6 +23,11 @@ public class ExampleOneMain {
 		for(int i = 1; i <= 4; i++) {
 			volume.push(i);
 		} // now volume is 4
+
+//		//if you want to remove and display all values, the best way to iterate since, we have implemented isEmpty() we can do like below:
+//		while (!volume.isEmpty()) {
+//			System.out.printf("%d ", volume.pop()); 
+//		}
 		
 		//you can decrease volume down to 0
 		volume.pop(); // down to 3
