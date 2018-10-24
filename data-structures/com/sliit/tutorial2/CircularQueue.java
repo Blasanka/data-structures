@@ -21,8 +21,8 @@ public class CircularQueue {
 			System.out.println("Queue is full");
 		} else {
 			if (rear == maxSize - 1) rear = -1;
-			nItems++;
 			queueArr[++rear] = value;
+			nItems++;
 		}
 	}
 	
@@ -31,10 +31,11 @@ public class CircularQueue {
 			System.out.println("Queue is empty!");
 			return ' ';
 		} else {
+			char temp = queueArr[front++];
 			if (front == maxSize) front = 0;
 			
 			nItems--;
-			return queueArr[front++];
+			return temp;
 		}
 	}
 	

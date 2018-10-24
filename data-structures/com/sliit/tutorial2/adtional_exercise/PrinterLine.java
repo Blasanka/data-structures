@@ -21,8 +21,9 @@ public class PrinterLine {
 			System.out.println("Queue is full");
 		} else {
 			if (rear == maxSize - 1) rear = -1;
-			nItems++;
+			
 			queueArr[++rear] = value;
+			nItems++;
 		}
 	}
 	
