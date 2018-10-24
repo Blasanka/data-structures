@@ -40,6 +40,25 @@ public class LinkedList {
 		return false;
 	}
 	
+	public Link deleteFirst() {
+		first = first.next;
+		return first;
+	}
+	
+//	public Link deleteLast() {
+//		Link current = first;
+//		Link previous = first;
+//		
+//		while (current != null) {
+//			previous = current;
+//			current = current.next;
+//		}
+//		
+//		Link temp = previous;
+//		previous = null;
+//		return temp;
+//	}
+	
 	public boolean insertAfter(int key, int newData) {
 		Link link = first;
 		
@@ -53,9 +72,14 @@ public class LinkedList {
 			first = newLink;
 			return true;
 		} else {
-			newLink.next = link.next;
-			link.next = newLink;
-			return true; // no point of doing this but lets thrill out
+			if (link != null) {
+				newLink.next = link.next;
+				link.next = newLink;
+				return true;
+			} else {
+				System.out.println("No matching key found");
+				return false;
+			}
 		}
 	}
 	
@@ -69,7 +93,7 @@ public class LinkedList {
 		Link current = first;
 		Link lastLink = first;
 		
-		while (current != null && current.iData != key) {
+		while (current != null) {
 			lastLink = current;
 			current = current.next;
 		}
